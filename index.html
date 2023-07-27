@@ -16,14 +16,14 @@
         theme: {
           extend: {
             backgroundImage: {
-              'slide1-bg': "url('images/banner1.png')",
-              'slide2-bg': "url('images/banner2.png')",
-              'slide3-bg': "url('images/banner3.png')",
-              'slide4-bg': "url('images/banner4.png')",
+              "slide1-bg": "url('images/banner1.png')",
+              "slide2-bg": "url('images/banner2.png')",
+              "slide3-bg": "url('images/banner3.png')",
+              "slide4-bg": "url('images/banner4.png')",
             },
           },
         },
-      }
+      };
     </script>
     <style>
       * {
@@ -55,7 +55,7 @@
               <input
                 type="text"
                 placeholder="Search here"
-                class=" input input-bordered w-36 pl-5 pr-6 md:w-auto"
+                class="input input-bordered w-36 pl-5 pr-6 md:w-auto"
               />
               <div class="absolute right-5">
                 <svg
@@ -77,124 +77,284 @@
           </div>
         </div>
       </section>
-      <section class=" relative banner-section mx-60">
-          <div class=" carousel w-full bg-no-repeat bg-cover bg-center h-[600px] opacity-80 black ">
-            <div id="slide1" class="carousel-item relative w-full bg-slide1-bg">
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full bg-slide2-bg">
-             
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full bg-slide3-bg">
-             
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full bg-slide4-bg">
-  
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+      <section class="relative banner-section mx-60">
+        <div
+          class="carousel w-full bg-no-repeat bg-cover bg-center h-[600px] opacity-80 black"
+        >
+          <div id="slide1" class="carousel-item relative w-full bg-slide1-bg">
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div class=" absolute bottom-1/4 left-[350px] carousel-content text-center">
-              <h1 class="mb-5 text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
-              <p class="mb-5 text-white font-semibold">We supply highly quality organic products.</p>
-              <button class="px-8 py-5 bg-red-400 rounded-lg">Shop Now</button>
+          <div id="slide2" class="carousel-item relative w-full bg-slide2-bg">
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
           </div>
-          
+          <div id="slide3" class="carousel-item relative w-full bg-slide3-bg">
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full bg-slide4-bg">
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-1/4 left-[350px] carousel-content text-center"
+        >
+          <h1 class="mb-5 text-7xl text-white font-extrabold">
+            Exotic tastes at your <br />
+            doorstep
+          </h1>
+          <p class="mb-5 text-white font-semibold">
+            We supply highly quality organic products.
+          </p>
+          <button class="px-8 py-5 bg-red-400 rounded-lg">Shop Now</button>
+        </div>
 
-          <div class=" absolute -bottom-[120px] left-[140px] flex justify-around gap-3 items-center text-center w-[1144px] h-64  bg-white">
-            <div>
-                <img src="images/fruit1.png" alt="">
-                    <p>Grape</p>
-            </div>
-            <div >
-                <img src="images/fruit2.png" alt="">
-                    <p>Orange</p>
-            </div>
-            <div >
-                <img src="images/fruit3.png" alt="">
-                    <p>Mango</p>  
-            </div>
-            <div >
-                <img src="images/fruit4.png" alt="">
-                    <p>Strawberry</p>
-            </div>
-            <div>
-                <img src="images/fruit5.png" alt="">
-                    <p>Pomegranate</p>
-            </div>
+        <div
+          class="absolute -bottom-[120px] left-[140px] flex justify-around gap-3 items-center text-center w-[1144px] h-64 bg-white"
+        >
+          <div>
+            <img src="images/fruit1.png" alt="" />
+            <p>Grape</p>
           </div>
+          <div>
+            <img src="images/fruit2.png" alt="" />
+            <p>Orange</p>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="" />
+            <p>Mango</p>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="" />
+            <p>Pomegranate</p>
+          </div>
+        </div>
       </section>
-
     </header>
 
     <main>
-      <section class="mx-60 my-12 mt-32">
-              <div class="flex justify-between items-center">
-                <div>
-                      <h1 class="text-5xl font-extrabold text-center pb-5">Deal of the day</h1>
-                      <p class="text-sm font-medium">Contrary to popular belief, is not simply random text. 
-                        It has roots in a piece of classical <br>Latin literature from 45 BC, 
-                        making it over 2000 years old.</p>
+      <section class="mx-60 my-12 mt-40">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-5xl font-extrabold text-center pb-5">
+              Deal of the day
+            </h1>
+            <p class="text-sm font-medium">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div
+                class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+              >
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15"></span>
+                </span>
+                days
               </div>
-              <div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:15;"></span>
-                    </span>
-                    days
-                  </div> 
-                  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:10;"></span>
-                    </span>
-                    hours
-                  </div> 
-                  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:24;"></span>
-                    </span>
-                    min
-                  </div> 
-                  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:31;"></span>
-                    </span>
-                    sec
-                  </div>
-                </div> 
+              <div
+                class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+              >
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 10"></span>
+                </span>
+                hours
+              </div>
+              <div
+                class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+              >
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 24"></span>
+                </span>
+                min
+              </div>
+              <div
+                class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content"
+              >
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 31"></span>
+                </span>
+                sec
               </div>
             </div>
+          </div>
+        </div>
 
+          <div class="flex justify-center items-center gap-5 ">
 
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="/images//fruit6.png"
+                alt=""
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked/>
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
               </div>
+                                              <!-- modal part -->
+              <div class="modal-actions">
+                <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box flex justify-center items-center w-[200px] h-[200px]">
+                      <img src="images/fruit6.png" alt="">
+                  </form>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
+            </div>
+          </div>
+        </div>
+          
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/fruit7.png"
+                  alt=""
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Orange</p>
+                <div class="rating">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                </div>
+                <div class="modal-actions">
+                
+                  <!-- modal part -->
+                  <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                  <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box flex justify-center items-center w-[200px] h-[200px]">
+                        <img src="images/fruit7.png" alt="">
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                      <button>close</button>
+                    </form>
+                  </dialog>
+              </div>
+            </div>
+          </div>
+          
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="images/fruit8.png"
+                  alt=""
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Red Dragon</p>
+                <div class="rating">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500"  />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                </div>
+                <div class="modal-actions">
+                
+                  <!-- modal part -->
+                  <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                  <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box flex justify-center items-center w-[200px] h-[200px]">
+                        <img src="images/fruit8.png" alt="">
+                    </form>
+                    <form method="dialog" class="modal-backdrop">
+                      <button>close</button>
+                    </form>
+                  </dialog>
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/fruit9.png"
+                alt=""
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500"  />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+              </div>
+              <div class="modal-actions">
+              
+                <!-- modal part -->
+                <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box flex justify-center items-center w-[200px] h-[200px]">
+                      <img src="images/fruit9.png" alt="">
+                  </form>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex justify-center items-center text-white mt-20 ">
+        <button class="px-8 py-5 bg-red-400 rounded-lg">Shop All</button>
+      </div>
       </section>
 
       <section>
-
       </section>
-
     </main>
 
-    <footer class="flex justify-center items-center bg-slate-600 w-auto h-[530px] mt-32">
+    <footer
+      class="flex justify-center items-center bg-slate-600 w-auto h-[530px] mt-32"
+    >
       <div>
         <div class="flex justify-center gap-4 p-3">
           <img class="w-14 h-14" src="images/logo.png" alt="" />
@@ -202,7 +362,7 @@
             Fruit Burst
           </p>
         </div>
-        <div class="flex justify-center items-center  text-white p-5 gap-16">
+        <div class="flex justify-center items-center text-white p-5 gap-16">
           <a href="">About Us</a>
           <a href="">Shop</a>
           <a href="">All Fruits</a>
@@ -215,10 +375,14 @@
           <a href=""><img src="images/icons8-youtube-96.svg" alt="" /></a>
           <a href=""><img src="images/icons8-linkedin-96.svg" alt="" /></a>
           <a href=""><img src="images/icons8-instagram-96.svg" alt="" /></a>
-          <a href=""><img src="images//apple-logo-svgrepo-com.svg" alt="" class="w-20 h-20"/></a>
+          <a href=""
+            ><img
+              src="images//apple-logo-svgrepo-com.svg"
+              alt=""
+              class="w-20 h-20"
+          /></a>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
