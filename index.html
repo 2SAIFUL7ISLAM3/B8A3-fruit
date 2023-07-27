@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fruit Burst</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -11,34 +11,136 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'slide1-bg': "url('images/banner1.png')",
+              'slide2-bg': "url('images/banner2.png')",
+              'slide3-bg': "url('images/banner3.png')",
+              'slide4-bg': "url('images/banner4.png')",
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
   </head>
   <body>
-    <div class="navbar bg-base-100 bg-red-400 rounded-full">
-      <div class="navbar-start">
-        <div>
-          <ul class=" flex justify-around items-center gap-8 pl-3 ">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
-          </ul>
+    <header>
+      <section class="mx-60 my-12">
+        <div class="navbar bg-base-100 bg-red-400 rounded-full">
+          <div class="navbar-start">
+            <ul class="flex justify-around items-center gap-8 pl-3">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="flex justify-center gap-4 p-3">
+            <img class="w-14 h-14" src="images/logo.png" alt="" />
+            <p class="text-4xl w-60 font-bold text-white text-center">
+              Fruit Burst
+            </p>
+          </div>
+          <div class="navbar-end pr-5">
+            <div class="relative flex justify-between items-center w-60">
+              <input
+                type="text"
+                placeholder="Search here"
+                class=" input input-bordered w-36 pl-5 pr-6 md:w-auto"
+              />
+              <div class="absolute right-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center gap-4 p-3">
-        <img class="w-14 h-14" src="images/logo.png" alt="">
-        <p class="text-4xl w-60 font-bold text-white text-center">Fruit Burst</p>
-      </div>
-      <div class="navbar-end pr-5">
-        <div class="flex justify-between items-center w-60">
-          <input type="text" placeholder="Search here" class=" relative input input-bordered w-36 pl-5 pr-6 md:w-auto"/>
-          <div class="absolute right-12">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
+      </section>
+      <section class=" relative banner-section mx-60">
+          <div class=" carousel w-full bg-no-repeat bg-cover bg-center h-[600px] opacity-80 black ">
+            <div id="slide1" class="carousel-item relative w-full bg-slide1-bg">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-slide2-bg">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full bg-slide3-bg">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full bg-slide4-bg">
+  
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class=" absolute bottom-1/4 left-[350px] carousel-content text-center">
+              <h1 class="mb-5 text-7xl text-white font-extrabold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5 text-white font-semibold">We supply highly quality organic products.</p>
+              <button class="px-8 py-5 bg-red-400 rounded-lg">Shop Now</button>
           </div>
           
-        </div>
-      </div>
-    </div>
+
+          <div class=" absolute -bottom-[120px] left-[140px] flex justify-around gap-3 items-center text-center w-[1144px] h-64  bg-white">
+            <div>
+                <img src="images/fruit1.png" alt="">
+                    <p>Grape</p>
+            </div>
+            <div >
+                <img src="images/fruit2.png" alt="">
+                    <p>Orange</p>
+            </div>
+            <div >
+                <img src="images/fruit3.png" alt="">
+                    <p>Mango</p>  
+            </div>
+            <div >
+                <img src="images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+            </div>
+            <div>
+                <img src="images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+            </div>
+          </div>
+        
+      </section>
+<section>
+
+</section>
+    </header>
   </body>
 </html>
